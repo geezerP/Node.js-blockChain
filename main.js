@@ -10,9 +10,9 @@ class Block {
    }
 
    getHash() {
-       var encript=JSON.stringify(this.data) + this.prevHash + this.index + this.timestamp;
+       var encrypt=JSON.stringify(this.data) + this.prevHash + this.index + this.timestamp;
        var hash=crypto.createHmac('sha256', "secret")
-       .update(encript)
+       .update(encrypt)
        .digest('hex');
        // return sha(JSON.stringify(this.data) + this.prevHash + this.index + this.timestamp);
        return hash;
