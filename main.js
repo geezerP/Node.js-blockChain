@@ -45,9 +45,9 @@ class BlockChain {
 
 
 const BChain = new BlockChain();
-BChain.addBlock({sender: "Meshack Mwaura", reciver: "Juma Allan", amount: 100});
-BChain.addBlock({sender: "Wayne Gakuo", reciver: "Norman Nuthu", amount: 50});
-BChain.addBlock({sender: "Fank Tamre", reciver: "Gladwell Wanjiku", amount: 75});
+BChain.addBlock({sender: "Meshack Mwaura", receiver: "Juma Allan", amount: 100});
+BChain.addBlock({sender: "Wayne Gakuo", receiver: "Norman Nuthu", amount: 50});
+BChain.addBlock({sender: "Fank Tamre", receiver: "Gladwell Wanjiku", amount: 75});
 console.dir(BChain,{depth:null})
 
 console.log("******** Validity of this blockchain: ", BChain.chainIsValid());
